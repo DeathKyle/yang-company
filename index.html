@@ -42,6 +42,35 @@
   overflow: hidden;
 }
 
+    #team {
+  padding: 2em 1em;
+  background-color: #f9f9f9;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+.team-member {
+  flex: 1 1 280px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #e28b3c;
+}
+.team-member h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+.team-member p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
     
     body {
       font-family: "Helvetica Neue", sans-serif;
@@ -229,6 +258,25 @@
   <button class="accordion">03 AI算法模型为您匹配</button>
   <div class="panel">
     <p>杨凯自主研发AI匹配算法，深度理解阿姨技能与雇主需求，实现高效匹配。</p>
+  </div>
+</section>
+
+  <!-- 创始团队 -->
+<section id="team">
+  <h2>创始团队</h2>
+  <div class="team-container">
+    <div class="team-member">
+      <h3>刘仕龙</h3>
+      <p>湖南大学毕业，东部战区陆军退役军人。曾任中韩跨国家政吉林省CEO，现任和禧家政董事长，出版书籍《家政暖阳》，荣获橘子中文社金奖。</p>
+    </div>
+    <div class="team-member">
+      <h3>陈旭生</h3>
+      <p>长春大学毕业，原中国人寿人力资源负责人，具备多年央企HR管理经验，现负责阿姨招聘与培训工作。</p>
+    </div>
+    <div class="team-member">
+      <h3>杨凯</h3>
+      <p>北华大学毕业，曾参与中国一汽车载系统研发，现任AI匹配平台技术负责人，主导自研家政智能匹配大模型。</p>
+    </div>
   </div>
 </section>
 
