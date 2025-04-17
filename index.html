@@ -9,38 +9,66 @@
       font-family: "Helvetica Neue", sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #ffffff; /* 背景为白色 */
-      color: #333; /* 黑色文字 */
+      background-color: #ffffff;
+      color: #333;
     }
+    
+    /* 头部优化 */
     header {
-      background-color: #ffffff; /* 背景保持白色 */
-      color: #333; /* 黑色文本 */
-      padding: 0px;
+      background-color: #ffffff;
+      padding: 15px 0;
       text-align: center;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
     header img {
-      width: 300px; /* LOGO 图片大小 */
+      width: 180px;
       height: auto;
-      display: block;
-      margin: 0 auto 0px;
-      border: 0px solid ; 
     }
+    .company-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    .slogan {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+      font-size: 14px;
+      color: #666;
+    }
+    
+    /* 导航菜单优化 */
     nav {
       background-color: #1d3557;
-      padding: 10px;
-      text-align: center;
+      padding: 12px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
     }
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      padding: 5px 10px;
+      white-space: nowrap;
+      font-size: 16px;
     }
+    
+    /* 主体内容 */
     .hero {
       background-color: #457b9d;
       color: white;
       text-align: center;
-      padding: 100px 20px;
+      padding: 80px 20px;
     }
     .hero h1 {
       font-size: 36px;
@@ -72,12 +100,46 @@
       padding: 20px;
       font-size: 14px;
     }
+    
+    /* 手机端适配 */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        gap: 8px;
+      }
+      header img {
+        width: 150px;
+      }
+      .company-name {
+        font-size: 18px;
+      }
+      nav {
+        gap: 10px;
+        padding: 10px 5px;
+      }
+      nav a {
+        font-size: 14px;
+      }
+      .hero {
+        padding: 60px 15px;
+      }
+      .hero h1 {
+        font-size: 28px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="images/logo22.jpg" alt="和禧家政LOGO" class="logo" />
+    <div class="header-content">
+      <img src="images/logo22.jpg" alt="和禧家政LOGO" class="logo" />
+      <div class="company-name">和禧家政服务科技(杭州)有限公司</div>
+      <div class="slogan">让高端没有溢价</div>
+    </div>
   </header>
 
   <nav>
