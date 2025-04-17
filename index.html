@@ -18,6 +18,30 @@
         background-color: #fdfaf4;
         border-radius: 8px;
     }
+
+    
+  .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 16px;
+}
+.accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
     
     body {
       font-family: "Helvetica Neue", sans-serif;
@@ -180,6 +204,7 @@
         <p><strong>优势亮点：</strong>央企HR团队背景，专业筛选机制，严格背景调查。</p>
     </div>
 
+  
     <div class="team-member">
         <h3>杨凯 — 技术负责人</h3>
         <p>北华大学毕业，曾参与中国一汽车载系统研发，经验丰富。现主导和禧家政AI大模型匹配系统的开发。</p>
@@ -187,6 +212,27 @@
     </div>
 </section>
 
+<!-- 公司理念 -->
+<section id="philosophy">
+  <h2>公司理念</h2>
+
+  <button class="accordion">01 军人为您保证服务品质</button>
+  <div class="panel">
+    <p>创始人刘仕龙曾在中国人民解放军陆军服役，亲自把关服务品质与售后。</p>
+  </div>
+
+  <button class="accordion">02 央企资深HR为您甄选阿姨</button>
+  <div class="panel">
+    <p>陈旭生拥有多年央企HR经验，带队为您精准甄选合适的家政人员。</p>
+  </div>
+
+  <button class="accordion">03 AI算法模型为您匹配</button>
+  <div class="panel">
+    <p>杨凯自主研发AI匹配算法，深度理解阿姨技能与雇主需求，实现高效匹配。</p>
+  </div>
+</section>
+
+  
   <section id="services">
     <h2>服务项目</h2>
     <div class="services">
@@ -235,5 +281,18 @@
     和禧家政服务科技(杭州)有限公司 © 2025
   </footer>
 
+
+ <script>
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    });
+  }
+</script>
+ 
+  
 </body>
 </html>
