@@ -1,166 +1,171 @@
-/* 通用样式 */
-* {
+/* 公共样式 */
+body {
+  font-family: "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-header, footer {
-  background-color: #e28b3c;
-  color: white;
-  text-align: center;
-}
-
-h1, h2, h3 {
-  font-weight: normal;
+  background-color: #ffffff;
   color: #333;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin: 0.5em 0;
-}
-
-h2 {
-  font-size: 2em;
-  margin: 1em 0;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-/* 导航栏 */
-nav {
-  background-color: #333;
-  color: white;
-  padding: 1em;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* 页面布局 */
-section {
-  padding: 2em;
-  background-color: white;
-  margin: 1em auto;
-  max-width: 1200px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-  padding: 1em;
-  background-color: #333;
-  color: white;
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-  nav a {
-    font-size: 1.1em;
-    margin: 0 10px;
-  }
-
-  header h1 {
-    font-size: 2em;
-  }
-
-  section {
-    padding: 1.5em;
-  }
-}
-
-/* 通用样式 */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-nav {
-  background-color: #333;
-  color: white;
-  padding: 1em;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* 页面标题 */
 header {
-  background-color: #e28b3c;
-  color: white;
-  padding: 2em;
+  background-color: #ffffff;
+  padding: 20px 0;
   text-align: center;
 }
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
+header img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* 公司背景与理念 */
+nav {
+  background-color: #1d3557;
+  padding: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.hero {
+  background-color: #457b9d;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 20px;
+}
+
 section {
-  padding: 2em;
-  background-color: white;
-  margin: 1em auto;
-  max-width: 1200px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.services, .team, .cases {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  color: #e28b3c;
-  font-size: 1.8em;
-  margin-bottom: 1em;
-}
-
-section p {
-  font-size: 1em;
-  color: #333;
-  line-height: 1.6;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 footer {
-  text-align: center;
-  padding: 1em;
-  background-color: #333;
+  background-color: #1d3557;
   color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 200px;
+  }
+  nav {
+    gap: 10px;
+    padding: 10px 5px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+  .hero {
+    padding: 60px 15px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+/* 特定模块样式 */
+.team {
+  padding: 2em;
+  background-color: #fffdf5;
+}
+
+.team-member {
+  margin-bottom: 2em;
+  padding: 1em;
+  border-left: 4px solid #e28b3c;
+  background-color: #fdfaf4;
+  border-radius: 8px;
+}
+
+#team {
+  padding: 2em 1em;
+  background-color: #f9f9f9;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.team-member {
+  flex: 1 1 280px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #e28b3c;
+}
+
+.team-member h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 16px;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 
