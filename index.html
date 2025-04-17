@@ -1,61 +1,174 @@
-
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>和禧家政服务科技(杭州)有限公司</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-        header { text-align: center; padding: 20px; background-color: #fff; }
-        header img { max-width: 150px; }
-        header h1 { margin: 10px 0 5px; }
-        header p { color: #888; font-size: 14px; }
-        section { padding: 20px; max-width: 900px; margin: auto; }
-        .aunt-card { background: #fff; padding: 15px; margin: 10px 0; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        footer { text-align: center; padding: 20px; background-color: #f1f1f1; font-size: 12px; color: #666; }
-        . logo {
-  width: 400px;
-  height: 400px;
-  display: block;
-  margin: 0 auto 20px auto;
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>和禧家政服务科技(杭州)有限公司</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #e63946;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #1d3557;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: #457b9d;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .team, .cases {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="和禧到家LOGO" class="logo">
-        <h1>和禧家政服务科技(杭州)有限公司</h1>
-        <p>让高端没有溢价</p>
-    </header>
 
-    <section>
-        <h2>公司简介</h2>
-        <p>和禧家政是一家专注于高品质家庭服务的公司，提供住家保姆、育儿嫂、月嫂、老人陪护等服务。我们以“让高端没有溢价”为使命，致力于提升家政服务行业的透明度与专业度。</p>
-        
-        <h2>我们的阿姨</h2>
-        <div class="aunt-card">
-            <strong>张阿姨，45岁</strong><br>
-            8年育儿经验<br>
-            擅长：会做辅食、能带两娃、有早教经验
-        </div>
-        <div class="aunt-card">
-            <strong>李阿姨，52岁</strong><br>
-            5年照顾老人经验<br>
-            擅长：照顾失能老人、煲汤做饭、推拿按摩
-        </div>
+  <header>
+    <h1>和禧家政服务科技(杭州)有限公司</h1>
+    <p>让高端没有溢价</p>
+  </header>
 
-        <h2>联系方式</h2>
-        <p>电话：138xxxx8888<br>
-        微信：hexi-jiazheng</p>
+  <nav>
+    <a href="#services">服务项目</a>
+    <a href="#advantages">我们的优势</a>
+    <a href="#team">创始团队</a>
+    <a href="#cases">客户案例</a>
+    <a href="#contact">联系我们</a>
+  </nav>
 
-        <h3>温馨提示</h3>
-        <p>找阿姨，找安心，找和禧到家。</p>
-    </section>
+  <section class="hero">
+    <h1>家政服务，用心呵护每一个家</h1>
+    <p>AI智能匹配 · 军人品质保障 · 高效响应</p>
+  </section>
 
-    <footer>
-        和禧家政服务科技(杭州)有限公司 © 2025
-    </footer>
+  <section id="services">
+    <h2>服务项目</h2>
+    <div class="services">
+      <div class="card">
+        <h3>保姆服务</h3>
+        <p>日常照料，卫生清洁，陪护老人，接送孩子。</p>
+      </div>
+      <div class="card">
+        <h3>育儿嫂</h3>
+        <p>科学育儿，早教启蒙，习惯养成，亲子互动。</p>
+      </div>
+      <div class="card">
+        <h3>月嫂服务</h3>
+        <p>产后护理，营养调理，新生儿照料，心理支持。</p>
+      </div>
+      <div class="card">
+        <h3>老人陪护</h3>
+        <p>康复护理，情绪陪伴，生活协助，健康监督。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="advantages">
+    <h2>我们的优势</h2>
+    <div class="services">
+      <div class="card">
+        <h3>军人品质保障</h3>
+        <p>创始人退役军人，亲自把控服务质量。</p>
+      </div>
+      <div class="card">
+        <h3>AI智能匹配</h3>
+        <p>根据客户需求自动匹配合适阿姨，效率高。</p>
+      </div>
+      <div class="card">
+        <h3>央企HR团队</h3>
+        <p>专业人力资源筛选机制，严格背景调查。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>创始团队</h2>
+    <div class="team">
+      <div class="card">
+        <h3>刘仕龙</h3>
+        <p>退役军人，董事长，著有《家政暖阳》。</p>
+      </div>
+      <div class="card">
+        <h3>陈旭生</h3>
+        <p>原央企HR主管，现负责阿姨招聘与培训。</p>
+      </div>
+      <div class="card">
+        <h3>杨凯</h3>
+        <p>AI工程师，自研家政匹配大模型平台。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cases">
+    <h2>客户案例</h2>
+    <div class="cases">
+      <div class="card">
+        <p>萧山区客户通过我们成功找到满意保姆，服务细心，主动解决问题。</p>
+      </div>
+      <div class="card">
+        <p>余杭区客户育儿问题通过育儿嫂耐心指导明显改善，非常感激。</p>
+      </div>
+      <div class="card">
+        <p>上城区月嫂服务帮助产妇顺利恢复，客户给予高度好评。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>联系我们</h2>
+    <p>电话：19524317165</p>
+    <p>地址：杭州市余杭区梦想小镇电科E创24楼24-102室</p>
+  </section>
+
+  <footer>
+    和禧家政服务科技(杭州)有限公司 © 2025
+  </footer>
+
 </body>
 </html>
