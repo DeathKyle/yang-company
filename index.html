@@ -13,39 +13,20 @@
       color: #333;
     }
     
-    /* 头部优化 */
+    /* 头部简化版 */
     header {
       background-color: #ffffff;
-      padding: 15px 0;
+      padding: 20px 0;
       text-align: center;
-    }
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      max-width: 1200px;
-      margin: 0 auto;
     }
     header img {
-      width: 180px;
+      width: 300px;
       height: auto;
-    }
-    .company-name {
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-    .slogan {
-      width: 100%;
-      text-align: center;
-      margin-top: 5px;
-      font-size: 14px;
-      color: #666;
+      display: block;
+      margin: 0 auto;
     }
     
-    /* 导航菜单优化 */
+    /* 导航菜单 */
     nav {
       background-color: #1d3557;
       padding: 12px 0;
@@ -103,15 +84,8 @@
     
     /* 手机端适配 */
     @media (max-width: 768px) {
-      .header-content {
-        flex-direction: column;
-        gap: 8px;
-      }
       header img {
-        width: 150px;
-      }
-      .company-name {
-        font-size: 18px;
+        width: 200px;
       }
       nav {
         gap: 10px;
@@ -135,11 +109,7 @@
 <body>
 
   <header>
-    <div class="header-content">
-      <img src="images/logo22.jpg" alt="和禧家政LOGO" class="logo" />
-      <div class="company-name">和禧家政服务科技(杭州)有限公司</div>
-      <div class="slogan">让高端没有溢价</div>
-    </div>
+    <img src="images/logo22.jpg" alt="和禧家政LOGO" />
   </header>
 
   <nav>
